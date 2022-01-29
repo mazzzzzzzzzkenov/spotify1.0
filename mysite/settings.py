@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-gcz=%&z0&c476=^4srp1=&x(g%mx%ii1)!obhnpuga-)!vjxlx
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if toserver:
-    DEBUG = False
+    DEBUG = True
     ALLOWED_HOSTS = ['tricodee.herokuapp.com']
 else:
     DEBUG = True
