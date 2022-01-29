@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+<div class="image_box" id="main_info">
+	<div class="mt50">
+		<div class="large_text mt15 mb15">Spotify</div>		
+		<div class="mb15">
+			<div><b>Song name</b></div>
+			<input id="song_name_input" type="text" name="">	
+		</div>
+		<div class="mb15">
+			<div><b>Artist name</b></div>
+			<input id="artist_input" type="text" name="">
+		</div>		
+		<div class="mb15">
+			<div><b>MP3 file</b></div>
+            <label>
+			    <input id="upload_input" type="file" class="hidden" required/>
+			    <a class="btn btn-white">Select file</a>
+			</label>
+		</div>		
+		<div class="mt30">
+			<a class="btn-green btn mt15" onclick="upload_track()">Upload</a>
+		</div>	
+	</div>
+</div>
+{% endblock content %}

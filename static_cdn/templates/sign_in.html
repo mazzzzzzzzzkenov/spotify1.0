@@ -1,0 +1,31 @@
+{% load static %}
+
+<html>
+<head>
+	<title>Music blog</title>
+ 	<link rel='stylesheet' href='{% static "style/style.css" %}'/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&display=swap" rel="stylesheet">	
+</head>
+<body>
+	{% include "header.html" %}
+	<div class="image_box">
+		<div>
+			<div class="large_text mt50">Spotify</div>
+			<div class="mb15">
+				<div><b>Mail</b></div>
+				<input id="mail_input" type="text" name="">
+			</div>
+			<div class="mb15">
+				<div><b>Password</b></div>
+				<input id="password_input" type="password" name="">			
+			</div>		
+			<div>
+				<button class="btn" onclick="send_data()">Sign in</button>
+			</div>	
+		</div>
+	</div>
+	<script type="text/javascript" src="{% static 'scripts/script.js' %}"></script>
+</body>
+</html>
